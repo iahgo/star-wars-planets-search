@@ -100,7 +100,7 @@ function BuscaPlaneta() {
           />
         </label>
       </section>
-      <form onSubmit={ handleSubmit }>
+      <form onSubmit={ handleSubmit } className="inputs container col-4">
         <label htmlFor="column" id="tipo-input">
           Tipo:
           <select
@@ -136,7 +136,7 @@ function BuscaPlaneta() {
             <option>igual a</option>
           </select>
         </label>
-        <label htmlFor="value">
+        <label htmlFor="value" id="valor">
           Valor:
           <input
             data-testid="value-filter"
@@ -149,7 +149,7 @@ function BuscaPlaneta() {
         <button
           data-testid="button-filter"
           type="submit"
-          className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary
+          className="botao MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary
           MuiButton-sizeMedium
           MuiButton-outlinedSizeMedium MuiButtonBase-root  css-1isaiwl"
         >

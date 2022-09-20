@@ -63,7 +63,6 @@ thead {
   height: 100px;
   justify-content: center;
   margin: auto;
-  padding: auto;
   width: auto;
 }
 
@@ -71,7 +70,6 @@ thead {
   height: auto;
   margin: auto;
   margin-top: 20px;
-  padding: auto;
   text-align: center;
 }
 
@@ -79,17 +77,41 @@ thead {
   color: white;
   height: 10%;
   margin: auto;
-  padding: auto;
   text-align: justify;
 
 }
 
 .form {
   margin: auto;
-  padding: auto;
 }
 
 #name-input {
   width: 250px;
 }
 
+.inputs {
+  margin:auto;
+  display: inline;
+}
+
+#tipo-input {
+  margin: auto;
+  padding: 1%;
+}
+
+#comparacao {
+  margin: auto;
+  padding: 1%;
+}
+
+#valor {
+  padding: 1%;
+}
+
+#value {
+  width: 50px;
+}
+
+.botao {
+  display:grid;
+}
