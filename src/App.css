@@ -70,6 +70,7 @@ thead {
 .titulo {
   height: auto;
   margin: auto;
+  margin-top: 20px;
   padding: auto;
   text-align: center;
 }
