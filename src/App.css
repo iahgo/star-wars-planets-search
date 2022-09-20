@@ -87,3 +87,8 @@ thead {
   margin: auto;
   padding: auto;
 }
+
+#name-input {
+  width: 250px;
+}
+

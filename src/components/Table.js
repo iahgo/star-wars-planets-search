@@ -37,20 +37,17 @@ function Table() {
 
   return (
     <div>
-      <table className="table table-dark table-striped table-responsive">
+      <table className="table table-bordered table-dark table-striped table-responsive">
         <thead>
           <tr>
             <th>Name</th>
             <th>Rotation Period</th>
-            <th>Orbital Period</th>
-            <th>Diameter</th>
             <th>Climate</th>
-            <th>Gravity</th>
-            <th>Terrain</th>
-            <th>Surface Water</th>
+            <th>Orbital Period</th>
             <th>Population</th>
-            <th>Created</th>
-            <th>Edited</th>
+            <th>Diameter</th>
+            <th>Surface Water</th>
+            <th>Terrain</th>
           </tr>
         </thead>
         <tbody className="tbody-class">
@@ -58,15 +55,12 @@ function Table() {
             <tr key={ element.name } data-testid={ `${element.name}` }>
               <td>{element.name}</td>
               <td>{element.rotation_period}</td>
-              <td>{element.orbital_period}</td>
-              <td>{element.diameter}</td>
               <td>{element.climate}</td>
-              <td>{element.gravity}</td>
-              <td>{element.terrain}</td>
-              <td>{element.surface_water}</td>
+              <td>{element.orbital_period}</td>
               <td>{element.population}</td>
-              <td>{element.created}</td>
-              <td>{element.edited}</td>
+              <td>{element.diameter}</td>
+              <td>{element.surface_water}</td>
+              <td>{element.terrain}</td>
             </tr>
           ))}
         </tbody>
