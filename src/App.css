@@ -110,8 +110,14 @@ thead {
 
 #value {
   width: 50px;
+  margin: 6px;
 }
+
 
 .botao {
   display:grid;
+}
+
+select {
+  margin: 6px;
 }
