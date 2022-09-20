@@ -149,9 +149,7 @@ function BuscaPlaneta() {
         <button
           data-testid="button-filter"
           type="submit"
-          className="botao MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary
-          MuiButton-sizeMedium
-          MuiButton-outlinedSizeMedium MuiButtonBase-root  css-1isaiwl"
+          className="botao Primary"
         >
           Filtrar
         </button>
