@@ -39,3 +39,51 @@
     transform: rotate(360deg);
   }
 }
+
+table {
+  page-break-inside: auto;
+  width: 100%;
+}
+
+tr {
+  page-break-after: auto;
+  page-break-inside: avoid;
+}
+
+thead {
+  display: table-header-group;
+}
+
+#name-section {
+  align-items: center;
+
+  /* display: flex; */
+
+  /* flex-direction: row; */
+  height: 100px;
+  justify-content: center;
+  margin: auto;
+  padding: auto;
+  width: auto;
+}
+
+.titulo {
+  height: auto;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
+
+.info {
+  color: white;
+  height: 10%;
+  margin: auto;
+  padding: auto;
+  text-align: justify;
+
+}
+
+.form {
+  margin: auto;
+  padding: auto;
+}

@@ -66,17 +66,17 @@ function BuscaPlaneta() {
     if (comparisonFilter === 'maior que') {
       setPlanets(planets.filter((elem) => (
         Number(elem[columnFilter])
-          > Number(valueFilter)
+        > Number(valueFilter)
       )));
     } if (comparisonFilter === 'menor que') {
       setPlanets(planets.filter((elem) => (
         Number(elem[columnFilter])
-          < Number(valueFilter)
+        < Number(valueFilter)
       )));
     } if (comparisonFilter === 'igual a') {
       setPlanets(planets.filter((elem) => (
         Number(elem[columnFilter])
-          === Number(valueFilter)
+        === Number(valueFilter)
       )));
     }
     eliminaFilter(columnFilter);
@@ -84,9 +84,9 @@ function BuscaPlaneta() {
   };
 
   return (
-    <div>
-      <section>
-        <label htmlFor="name-filter">
+    <div id="form">
+      <section id="name-section" className="d-flex">
+        <label htmlFor="name-filter" id="name-input">
           Filtrar por nome:
           <input
             type="text"
@@ -95,11 +95,13 @@ function BuscaPlaneta() {
             data-testid="name-filter"
             onChange={ handleChange }
             value={ filterByName }
+            className="form-control form-control-lg"
+            placeholder="Digite um planeta"
           />
         </label>
       </section>
       <form onSubmit={ handleSubmit }>
-        <label htmlFor="column">
+        <label htmlFor="column" id="tipo-input">
           Tipo:
           <select
             data-testid="column-filter"
@@ -107,6 +109,8 @@ function BuscaPlaneta() {
             name="column-filter"
             onChange={ handleChange }
             value={ columnFilter }
+            className="MuiNativeSelect-select MuiNativeSelect-standard
+            MuiInput-input MuiInputBase-input css-1eqquvh"
           >
             {allFilters2.map((filter) => (
               <option
@@ -118,7 +122,7 @@ function BuscaPlaneta() {
             ))}
           </select>
         </label>
-        <label htmlFor="comparison">
+        <label htmlFor="comparison" id="comparacao">
           Comparação:
           <select
             data-testid="comparison-filter"
@@ -145,6 +149,9 @@ function BuscaPlaneta() {
         <button
           data-testid="button-filter"
           type="submit"
+          className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary
+          MuiButton-sizeMedium
+          MuiButton-outlinedSizeMedium MuiButtonBase-root  css-1isaiwl"
         >
           Filtrar
         </button>

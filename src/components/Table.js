@@ -37,7 +37,7 @@ function Table() {
 
   return (
     <div>
-      <table>
+      <table className="table table-dark table-striped table-responsive">
         <thead>
           <tr>
             <th>Name</th>
@@ -49,13 +49,11 @@ function Table() {
             <th>Terrain</th>
             <th>Surface Water</th>
             <th>Population</th>
-            <th>Films</th>
             <th>Created</th>
             <th>Edited</th>
-            <th>URL</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="tbody-class">
           {filtroValue(filtro).map((element) => (
             <tr key={ element.name } data-testid={ `${element.name}` }>
               <td>{element.name}</td>
@@ -67,31 +65,12 @@ function Table() {
               <td>{element.terrain}</td>
               <td>{element.surface_water}</td>
               <td>{element.population}</td>
-              <td>{element.films}</td>
               <td>{element.created}</td>
               <td>{element.edited}</td>
-              <td>{element.url}</td>
             </tr>
           ))}
         </tbody>
       </table>
-      {/* { filtro.map((element) => (
-        <tr key={ element.name }>
-          <td>{element.name}</td>
-          <td>{element.rotation_period}</td>
-          <td>{element.orbital_period}</td>
-          <td>{element.diameter}</td>
-          <td>{element.climate}</td>
-          <td>{element.gravity}</td>
-          <td>{element.terrain}</td>
-          <td>{element.surface_water}</td>
-          <td>{element.population}</td>
-          <td>{element.films}</td>
-          <td>{element.created}</td>
-          <td>{element.edited}</td>
-          <td>{element.url}</td>
-        </tr>
-      ))} */}
     </div>
   );
 }
